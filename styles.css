@@ -1,0 +1,243 @@
+main {
+    flex: 1;  /* makes the <main> grow (we want it to grow so that it pushes <footer> to the bottom of page)*/
+    background-image:url(images/paper.avif);
+    padding-bottom:20px;
+  }
+  h1{
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 55px;
+    padding:25px;
+  }
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    padding:10px
+  }
+  h3{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding:10px;
+  }
+
+  hr {
+    /* fancy horizontal line */
+    width: 75%;
+    border: 1.5px solid #302703;
+    border-radius: 50%;
+  }
+/* Flexbox */
+.flex-container{
+display: flex;
+justify-content: center;
+background-color: #302703;
+padding:75px;
+margin: 75px;
+text-align: center;
+flex-direction: row;
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+      width: 100%;
+      max-width: 40%;
+    }
+  }
+
+#flex-container{
+  width: 400px;
+  height: 525px;
+  padding: 30px;  
+  border: 7px solid #342606;
+  border-radius: 15%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  background-color: rgb(214, 201, 161);
+  font-size: 20px;
+  margin: 10px;
+}
+
+#flex-container img{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+/* Product page - Gallery */
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  
+  .container img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    margin:15px 0;
+  
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Market list - cards*/
+
+  .card{
+    background-color:rgb(214, 201, 161);
+    text-align: center;
+    border: 3px solid #342606;
+  }
+  .card img{
+    width: 100%;
+    height: 250px;
+  }
+  .card-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+.card-text{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding:none;
+  margin: none;
+}
+ /* Footer */
+  footer {
+    display: flex;  /* allows use of "justify-content" property */
+    justify-content: right;  /* horizontally centers the contents (the social icons) */
+    background-color: #342606;
+    height: 100px;
+    padding: 20px;
+  }
+ 
+  footer a {
+margin: 5px;
+    text-decoration: none!important;
+  }
+  
+  .social-icon {
+    display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
+    width: 50px;
+    height: 50px;
+    color: hsl(0, 100%, 2%);
+    background-color: #fefdf9;
+    justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
+    align-items: center;  /* vertically centers the contents (the FontAwesome icon) */
+    border-radius: 50%;  /* makes it round (circle if width and height are the same) */
+  }
+  
+  .social-icon:hover {
+    color: #222;  /* change color when hover over the link */
+  }
+
+  /* Product page - dropdown menu */
+  .dropbtn {
+    background-color: #4e3c14;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10%;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #706b4a;}
+
+  .product-desc{
+text-align: center;
+  padding: 30px;  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  background-color: rgb(214, 201, 161);
+  font-size: 22px;
+  margin: 50px;
+  }
+  ul{
+   list-style-position: inside;
+margin:0, auto;
+  }
+
+  /* list style position: inside --- the little dots next to the text */
+
+  /* button style */
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #493803;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #817755;
+  }
+  
+  .button:hover {background-color: #493803}
+  
+  .button:active {
+    background-color: #493803;
+    box-shadow: 0 5px #564f39;
+    transform: translateY(4px);
+  }
+
+  /* Gallery page - gallery items */
+
+  #gallery {
+    line-height:0;
+    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:5;
+    column-gap:5px;
+ }
+ #gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+}
+@media (max-width: 800px) {
+  #gallery {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+  }
+}
