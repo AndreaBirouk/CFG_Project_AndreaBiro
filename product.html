@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our products</title>
+
+     <!-- Bootstrap and FontAwesome cdn links -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- NavBar -->
+ <nav class="navbar navbar-expand-md navbar-light" style="background-color:#291d03;" fixed-top>
+    <a class="navbar-brand" href="./index.html" style="color: antiquewhite;">Andrea's Cheesecake Heaven</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: antiquewhite;">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color: antiquewhite;">About</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>   
+
+<main>
+     <!-- Title -->
+  <div>
+    <h1> Welcome to our Cheesecake Heaven </h1>
+    <h2> Home of luxury baked cheesecakes</h2>
+  </div>
+  <hr/>
+
+  <div class="product-desc">
+    <h3> Our promise</h3>
+    <p id="product-title">We create heavenly baked cheesecakes, using the finest ingredients, always fresh! <br/> <br/>
+       All cheesecake are <span style="color: #9e0505; font-style: italic;">made with love</span> </p>
+       <a class="btn" href="gallery.html" role="button">Cheesecake gallery</a>
+  </div>
+
+    <hr/>
+    <div class="product-desc">
+        <h3> How to order</h3>
+        <p id="product-title"> You can order through <a class="btn" href="product.html" role="button">our Business Page</a> by messaging us with the following information:
+    <br/> <br/> </p>
+<ul>
+    <li> size of mini selection or full cheesecake</li>
+    <li> flavours</li>
+    <li> requested date</li>
+    <li> collection or delivery</li>
+    <li> payment method</li>
+    <li> dietary requirements</li>   
+</ul>
+<p> <span style="font-style: italic;">Delivery or collection is available </span></p>
+<div class="dropdown">
+    <button class="dropbtn">Flavours</button>
+    <div class="dropdown-content">
+      <a href="#">strawberry</a>
+      <a href="#">nutella</a>
+      <a href="#">lemon</a>
+      <a href="#">etc</a>
+    </div>
+  </div>
+      </div>
+      <hr/>
+
+      <!-- ==== Product list - dropdown ==== -->
+      <div class="container" id="product">
+        <h2> Your favourites...</h2>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <!-- you can wrap the <img> within an <a> tag, this turns the img into a link -->
+            <a>
+              <img src="images/cheesecake_2.jpg" alt="Cheesecake slices"/></a>
+              <div class="dropdown">
+                <button class="dropbtn">Market</button>
+                <div class="dropdown-content">
+                  <a href="#">1 slice - £4.00</a>
+                  <a href="#">2 slices - £7.50</a>
+                  <a href="#">4 slices - £14.00</a>
+                </div>
+              </div>
+          </div>
+         
+          <div class="col-sm-6 col-lg-4">
+            <img src="images/cheesecake_4.jpeg" alt="Full cheesecake"/>
+            <div class="dropdown">
+                <button class="dropbtn">Full cheesecake</button>
+                <div class="dropdown-content">
+                  <a href="#">Medium (8 ppl) - £30.00 </a>
+                  <a href="#">Large (12 ppl)  £40.00</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <img src="images/cheesecake_6.jpeg" alt="Cheesecake selection"/>
+            <div class="dropdown">
+                <button class="dropbtn">Cheesecake selection</button>
+                <div class="dropdown-content">
+                  <a href="#">box of 4 - £14.00</a>
+                  <a href="#">box of 6 - £20.00</a>
+                  <a href="#">Box of 9 - £28.00</a>
+                </div>
+              </div>
+          </div>
+
+          
+        </div>
+
+    
+      <!-- ==== END photograph grid ==== -->
+
+      <hr/>
+</main>
+<body>
+    <footer>
+        <!-- ==== Social Media ==== -->
+        
+        <a href="https://facebook.com" target="_blank">
+          <span class='social-icon'><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <span class='social-icon'><i class="fab fa-instagram"></i></span>
+        </a>
+      </footer>
+
+
+ 
+    
+</body>
+</html>
